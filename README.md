@@ -1,1 +1,2 @@
 # HTML
+There are 4 assignment in this folder but just one project. Every assignment is one step in this final project. You can open the assignment 4 for the completed product. This project is constructed by html, css and Bootstrap 4.6
