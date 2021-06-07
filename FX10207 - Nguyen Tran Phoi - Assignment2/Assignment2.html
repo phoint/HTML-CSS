@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script defer src="fontawesome/js/all.min.js"></script>
+</head>
+<body>
+    <!--nesting in this header tag is a nav tag for menu. 
+    Every element in unorder list has link to navigate-->
+    <header>
+        <div class="container brand">
+            <a class="brand-logo" href="Project1.html">CREVEA Inc</a>
+            <nav>
+                <ul id="menu-home">
+                    <li><a href="Project1.html">Home</a></li>
+                    <li><a href="#our-business">OUR BUSINESS</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><i class="fas fa-search"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--    Single clickable image has full width  -->
+    <div class="banner">
+        <a href="#"><img class="banner-image" src="images/Banner.jpg" alt="we-are-crevea-inc"></a>
+<!--
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+-->
+    </div>
+    
+    <!--    Two images below have style in style.css file -->
+    <section id="about-us" >
+        <div class="first-column">
+            <h2>ABOUT US</h2>
+            <h3>Our goals is "to support and connect educational institutions, companies across the world by providing highly 
+            qualified/skilled human resource for mutual development and consulting services in job and skills training".
+            Archive this, we hope to contribute to the betterment of society.</h3>
+            <p>Our staff are highly experienced and senior members of diverse backgrounds in educational institutions and 
+            companies in Vietnam and other territories across the globe. We could provide superior services to our customers.</p>
+        </div>
+        <div class="second-column">
+            <img src="Images/About-Us.jpg" alt="About-Us">
+        </div>
+    </section>
+    
+    <!--    Two unorder list element with small image, clickable heading and paragraph inside. -->
+    <section id="our-business">
+        <div class="first-column">
+<!--            <img src="Images/education.jpg" alt="education-across-the-globe">-->
+        </div>
+        <div class="second-column">
+            <div class="container">
+                <a href="#"><h2>Our business</h2></a>
+                <ul>
+                    <li class="badge-container">
+                        <div class="badge" id="badge-1"></div>
+                        <div class="badge-content">
+                            <a href="education-consulting.html">
+                                <h3>Education consulting</h3>
+                            </a>
+                            <p>We offer various service as required from different educational institutions in Vietnam</p>
+                        </div>
+                    </li>
+                    <li class="badge-container">
+                        <div class="badge" id="badge-2"></div>
+                        <div class="badge-content">
+                            <a href="business-consulting.html">
+                                <h3>Business consulting</h3>
+                            </a>
+                            <p>We provide various service according to request from foreign companies and educational institutions</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!--    Three simalar element with image, title, paragraph (optional) and an anchor text "Read more"-->
+    <section id="news">
+        <div class="title-section">
+            <h2>News</h2>
+            <h3>Latest News</h3>
+        </div>
+        <div class="first column">
+            <div class="border-container">
+                <div class="img-container"><img src="Images/News-2.jpg" alt="News-2"></div>
+                <div class="news-content">
+                    <a href="#">
+                        <h4>Japanese staff agency company visited to Hanoi</h4>
+                    </a>
+                    <a href="#">Read more <i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="second column">
+            <div class="border-container">
+                <div class="img-container"><img src="Images/News-1.jpg" alt="News-1"></div>
+                <div class="news-content">
+                    <a href="#">
+                        <h4>Taiwanese university visited to Hanoi</h4>
+                    </a>
+                    <a href="#">Read more <i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="third column">
+            <div class="border-container">
+                <div class="img-container"><img src="Images/News-3.jpg" alt="News-3"></div>
+                <div class="news-content">
+                    <a href="#">
+                        <h4>We are pleased to announce the renewal of CREVEA Inc official website</h4>
+                    </a>
+                    <p>We changed the whole design and format to create more efficient and superior experience for our customers once they visit the website.
+                    We will continue updating it and providing more useful information. The website in Japanese will come out soon.</p>
+                    <a href="#">Read more <i></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--    One contact form with three input field (name, email and phone number), 
+    one textarea for message ans a submit button to send the message.-->
+    <section id="contact">
+        <div class="first-column">
+            <div class="title-section">
+                <h2>Contacts</h2>
+                <h3>We will contact you with relevant person in charge. Please click the "Send button" sfter providing your registering input.</h3>
+            </div>
+            <form action="action.php" method="post">
+                <div class="input-group">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Email address">
+                    <input type="phone" placeholder="Phone number">
+                
+                    <textarea name="message" id="contact-form" cols="150" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <input class="submit" type="submit" value="Send message">
+            </form>
+        </div>
+        <div class="second-column">
+            <img src="Images/Map.png" alt="map">
+        </div>
+    </section>
+    
+    <!--
+    This footer has 4 element with id from "footer-1" to "footer-4" for holding extra information
+    or sub-menu -->
+    <footer>
+        <section>
+            <div class="footer-block block-1">
+                <h2>CREVEA</h2>
+                <p>Add: No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+                <p>TEL: (+84)-989-412-665</p>
+                <p>Email: daisuke.kawashima@crevea.vn</p>
+                <p>Follow us on: </p>
+            </div>
+
+            <div class="footer-block block-2">
+                <h2>CATEGORIES</h2>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="Project1.html">Home</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#our-business">OUR BUSINESS</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#about-us">ABOUT US</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#news">NEWS</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#contact">CONTACT</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block block-3">
+                <h2>LANGUAGE</h2>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#">English</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#">Japanese</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block block-4">
+                <h2>GET OUR NEWS FROM US</h2>
+                <p>Please enter the email below to not miss the latest news from us!</p>
+                <form class="subcribe-form" action="action.php" method="post">
+                    <input class="input-subcribe" type="email" placeholder="Your email enter">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <hr class="footer-hr">
+        <p class="copyright">&copy; 2018 CREVEA Inc. All rights Reserved.</p>
+    </footer>
+</body>
+</html>

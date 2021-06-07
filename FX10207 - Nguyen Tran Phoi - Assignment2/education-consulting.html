@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Consulting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--nesting in this header tag is a nav tag for menu. 
+    Every element in unorder list has link to navigate-->
+    <header>
+        <div class="container brand">
+            <a class="brand-logo" href="Project1.html">CREVEA Inc</a>
+            <nav>
+                <ul id="menu-home">
+                    <li><a href="Project1.html">Home</a></li>
+                    <li><a href="#our-business">OUR BUSINESS</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><i class="fas fa-search"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--    Single clickable image has full width  -->
+    <div class="banner">
+        <a href="#"><img class="banner-image" src="images/Banner.jpg" alt="we-are-crevea-inc"></a>
+<!--
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+-->
+    </div>
+    
+   <main>
+        <h1>Education Consulting</h1>
+        <img src="Images/dudepad.png" alt="dude-pad" style="height: 500px; width: auto; float: left">
+        <h2>Education consulting that goes beyond training</h2>
+        <p>Educator training and program setup will be a part of your custom plan, but our consulting doesn’t stop there. We also provide classroom coaching to reinforce best practices and to help your educators integrate Edmentum programs seamlessly into their current instructional activities.</p>
+   </main>
+    
+    <!--
+    This footer has 4 element with id from "footer-1" to "footer-4" for holding extra information
+    or sub-menu -->
+    <footer>
+        <section>
+            <div class="footer-block block-1">
+                <h2>CREVEA</h2>
+                <p>Add: No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+                <p>TEL: (+84)-989-412-665</p>
+                <p>Email: daisuke.kawashima@crevea.vn</p>
+                <p>Follow us on: </p>
+            </div>
+
+            <div class="footer-block block-2">
+                <h2>CATEGORIES</h2>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="Project1.html">Home</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#our-business">OUR BUSINESS</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#about-us">ABOUT US</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#news">NEWS</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#contact">CONTACT</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block block-3">
+                <h2>LANGUAGE</h2>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#">English</a></li>
+                    <li><span class="fa-li"><i class="fas fa-angle-right"></i></span><a href="#">Japanese</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block block-4">
+                <h2>GET OUR NEWS FROM US</h2>
+                <p>Please enter the email below to not miss the latest news from us!</p>
+                <form class="subcribe-form" action="action.php" method="post">
+                    <input class="input-subcribe" type="email" placeholder="Your email enter">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <hr class="footer-hr">
+        <p class="copyright">&copy; 2018 CREVEA Inc. All rights Reserved.</p>
+    </footer>
+</body>
+</html>
