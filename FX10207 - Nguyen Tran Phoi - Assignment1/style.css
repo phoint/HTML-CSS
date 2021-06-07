@@ -1,0 +1,10 @@
+img {
+    width: 60%;
+    display: block;
+}
+
+main {
+    height: 400px;
+    overflow: hidden;
+}
+
