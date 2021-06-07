@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--nesting in this header tag is a nav tag for menu. 
+    Every element in unorder list has link to navigate-->
+    <header>
+        <p><a href="Project1.html">CREVEA Inc</a></p>
+        <nav>
+            <ul>
+                <li><a href="Project1.html">Home</a></li>
+                <li><a href="#our-business">OUR BUSINESS</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--    Single clickable image has full width  -->
+    <div class="banner">
+        <a href="#"><img src="images/Banner.jpg" alt="we-are-crevea-inc" style="width:100%"></a>
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+    
+    <!--    Two images below have style in style.css file -->
+    <div id="about-us">
+        <h2>ABOUT US</h2>
+        <h3>Our goals is "to support and connect educational institutions, companies across the world by providing highly 
+        qualified/skilled human resource for mutual development and consulting services in job and skills training".
+        Archive this, we hope to contribute to the betterment of society.</h3>
+        <p>Our staff are highly experienced and senior members of diverse backgrounds in educational institutions and 
+        companies in Vietnam and other territories across the globe. We could provide superior services to our customers.</p>
+        <img src="Images/About-Us.jpg" alt="About-Us">
+        <img src="Images/education.jpg" alt="education-across-the-globe">
+    </div>
+    
+    <!--    Two unorder list element with small image, clickable heading and paragraph inside. -->
+    <div id="our-business">
+        <a href="#">
+            <h2>Our business</h2>
+        </a>
+        <ul>
+            <li>
+                <img src="Images/hand-shaking.jpg" alt="hand shaking" style="width:100px;">
+                <a href="education-consulting.html">
+                    <h3>Education consulting</h3>
+                </a>
+                <p>We offer various service as required from different educational institutions in Vietnam</p>
+            </li>
+            <li>
+                <img src="Images/Book-Icon.png" alt="hand shaking" style="width:100px;">
+                <a href="business-consulting.html">
+                    <h3>Business consulting</h3>
+                </a>
+                <p>We provide various service according to request from foreign companies and educational institutions</p>
+            </li>
+        </ul>
+    </div>
+    
+    <!--    Three simalar element with image, title, paragraph (optional) and an anchor text "Read more"-->
+    <div id="news">
+        <h2>News</h2>
+        <h3>Latest News</h3>
+        <img src="Images/News-2.jpg" alt="News-2">
+        <a href="#">
+            <h4>Japanese staff agency company visited to Hanoi</h4>
+        </a>
+        <a href="#">Read more...</a>
+        <img src="Images/News-1.jpg" alt="News-1">
+        <a href="#">
+            <h4>Taiwanese university visited to Hanoi</h4>
+        </a>
+        <a href="#">Read more...</a>
+        <img src="Images/News-3.jpg" alt="News-3" style="width:420px;height:250px;">
+        <a href="#">
+            <h4>We are pleased to announce the renewal of CREVEA Inc official website</h4>
+        </a>
+        <p>We changed the whole design and format to create more efficient and superior experience for our customers once they visit the website.
+        We will continue updating it and providing more useful information. The website in Japanese will come out soon.</p>
+        <a href="#">Read more...</a>
+    </div>
+    
+    <!--    One contact form with three input field (name, email and phone number), 
+    one textarea for message ans a submit button to send the message.-->
+    <div id="contact">
+       <h2>Contacts</h2>
+        <h3>We will contact you with relevant person in charge. Please click the "Send button" sfter providing your registering input.</h3>
+        <form action="action.php" method="post">
+            <input type="text" placeholder="Your name"><br>
+            <input type="email" placeholder="Email address"><br>
+            <input type="phone" placeholder="Phone number"><br>
+            <textarea name="message" id="contact-form" cols="150" rows="10" placeholder="Your message"></textarea><br>
+            <input type="submit" value="Send message">
+        </form>
+        <img src="Images/Map.png" alt="map" style="width:100%;">
+    </div>
+    
+    <!--
+    This footer has 4 element with id from "footer-1" to "footer-4" for holding extra information
+    or sub-menu -->
+    <footer>
+        <div id="footer-1">
+            <h2>CREVEA</h2>
+            <p>Add: No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+            <p>TEL: (+84)-989-412-665</p>
+            <p>Email: daisuke.kawashima@crevea.vn</p>
+            <p>Follow us on: </p>
+        </div>
+        
+        <div id="footer-2">
+            <h2>CATEGORIES</h2>
+            <ul>
+                <li><a href="Project1.html">Home</a></li>
+                <li><a href="#our-business">OUR BUSINESS</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        
+        <div id="footer-3">
+            <h2>LANGUAGE</h2>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
+            </ul>
+        </div>
+        
+        <div id="footer-4">
+            <h2>GET OUR NEWS FROM US</h2>
+            <p>Please enter the email below to not miss the latest news from us!</p>
+            <form action="action.php" method="post">
+                <input type="email" placeholder="Your email enter">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <p>&copy; 2018 CREVEA Inc. All rights Reserved.</p>
+    </footer>
+</body>
+</html>
